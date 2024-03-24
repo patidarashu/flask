@@ -52,6 +52,9 @@ def display_one(name):
     data = cursor.fetchall()
     return render_template('display.html',data = data)
 
+@app.route('/something_new')
+def some():
+    return 'work under process'
 
 if __name__ == '__main__':
     app.run(debug=True)
